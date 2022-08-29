@@ -34,7 +34,7 @@ try{
             [
                 'status'=>false,
                 'message'=>'validation error',
-                'errors'=>$validatUser->erros()
+                'errors'=>$validateUser->erros()
             ],401);
     }
     $user=User::create([
@@ -84,7 +84,7 @@ public function loginUser(Request $request){
             [
                 'status'=>false,
                 'message'=>'validation error',
-                'errors'=>$validatUser->erros()
+                'errors'=>$validateUser->erros()
             ],401);
     }
 
